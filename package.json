@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-boilerplate",
+  "name": "jsonresume-theme-classico",
   "version": "0.1.2",
-  "description": "Boilerplate theme for JSON Resume",
-  "author": "Mattias Erming",
+  "description": "A simplistic theme for formatting your resume in the most ATS-parsable manner. ",
+  "author": "Leonardo Ferrisi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/erming/jsonresume-theme-boilerplate"
+    "url": "https://github.com/LeonardoFerrisi/jsonresume-theme-classico"
   },
   "license": "MIT",
   "dependencies": {

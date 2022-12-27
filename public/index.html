@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Leonardo Ferrisi</title>
+    <meta name="description" content="Motivated professional offering a diverse skill set in both Scientific Research, Software Engineering and the intersection of the two. Adds value to any organization in need of great collaboration, design of creative solutions, and with great flexibility. Meets tight deadlines. Rapid learner. Ready to take initiative wherever my skills are needed. Striving for nothing less than excellence in the endeavors I embark on." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
+    <style>:root {
+  /* Colors */
+  --primaryColor: #212529;
+  --secondaryColor: #95a5a6;
+  --accentColor: #f1c40f;
+  --linkColor: #2ecc71;
+  --mutedColor: #f4f6f6;
+
+  /* Typography */
+  --ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--ratio));
+  --scale2: calc(var(--scale1) * var(--ratio));
+  --scale3: calc(var(--scale2) * var(--ratio));
+  --scale4: calc(var(--scale3) * var(--ratio));
+  --scale5: calc(var(--scale4) * var(--ratio));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  color: var(--primaryColor);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
+}
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.2em;
+}
+
+li::marker {
+  color: var(--mutedColor);
+}
+
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:focus,
+a:hover {
+  color: var(--accentColor);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--secondaryColor);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--accentColor);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--scale2);
+}
+
+h5 {
+  font-size: var(--scale1);
+}
+
+h6 {
+  font-size: var(--scale0);
+}
+
+blockquote {
+  border-left: 0.2em solid var(--mutedColor);
+  padding-left: 1em;
+}
+
+cite {
+  color: var(--secondaryColor);
+  font-style: inherit;
+}
+
+cite::before {
+  content: '— ';
+}
+
+.masthead {
+  background: var(--mutedColor);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  row-gap: 0;
+}
+
+.masthead > *,
+section {
+  grid-column: main;
+}
+
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
+
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
+
+.spaced-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spaced-list:first-child::before {
+  border-bottom: 1px solid var(--mutedColor);
+  content: '';
+  flex-grow: 1;
+  margin: 0 1em;
+  order: 1;
+}
+
+.spaced-list > :nth-child(2) {
+  order: 2;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--mutedColor);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+          <h1>Leonardo Ferrisi</h1>
+          <h2>Software Engineering and Scientific Research</h2>
+      </header>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="grid-list">
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:ferrisil@union.edu">ferrisil@union.edu</a>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              (914) 646 8699
+            </div>
+        </div>
+      </section>
+        <section id="about">
+          <h3>About</h3>
+          <article>
+            <p>Motivated professional offering a diverse skill set in both Scientific Research, Software Engineering and the intersection of the two. Adds value to any organization in need of great collaboration, design of creative solutions, and with great flexibility. Meets tight deadlines. Rapid learner. Ready to take initiative wherever my skills are needed. Striving for nothing less than excellence in the endeavors I embark on.</p>
+          </article>
+        </section>
+        <section id="profiles">
+          <h3>Profiles</h3>
+          <div class="grid-list">
+              <div>
+                  <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/leonardo-ferrisi/">Leonardo Ferrisi</a>
+              </div>
+              <div>
+                  <h4>Github</h4>
+                    <a href="https://github.com/LeonardoFerrisi">LeonardoFerrisi</a>
+              </div>
+          </div>
+        </section>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2021-11-01">Nov 2021</time> –
+                    <time datetime="2023-06-01">Jun 2023</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Neurotechnology Researcher</strong>
+                </div>
+              </header>
+                <p>Working on research in the intersection between Neuroscience, Computer Science and Engineering utilizing state of the art methods and equipment for assistive and adaptive Neurotechnologies. Optimized experimental Operant Conditioning System for improving muscle control in people who have neuromuscular disorders. Developed software suite for conducting analysis on large datasets of electrophysiological activity with a focus in Evoked Potentials data for the purpose of optimizing assistive communication Brain Computer Interface. Utilized and further developed skills in Scientific Writing, Software Engineering, Signal Processing, Interprocess Communication, Documentation, Hardware and Software utilized for Scientific Research. and Research Methods in Neuroscience.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2022-06-10">Jun 2022</time> –
+                    <time datetime="2022-01-31">Jan 2022</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Digital Technology Intern</strong>
+                </div>
+              </header>
+                <p>Worked with General Electric as an intern performing the tasks of both a Software Engineer and Data Analyst in the Energy Industry. Developed multiple systems for automating data analysis pipelines in GE Vernova's Gas Power branch; paticularly with their Communications data. Developed a software suite for automatically conducting analytics on data utilizing Python, Numpy', ' Matplotlib', ' Scipy and Pandas to name a few.\nProduced and presented Software demos on both solo projects and projects done in collaboration with the help of other Software Engineers.\nDemonstrated Flexibility', ' Creativity', ' and Ingenuity in the development of code and large-scale projects for optimizing processes at General Electric.\nSuccessfully created an automation suite that demonstrated the capacity to optimize spending and save roughly $1.2 Million in costs across GE Vernova Gas Power. Utilized and further developed skills in Software Engineering, Signal Processing, Cloud Infrastructure based applications and software design, Agile Software Development, DevOps, Financial Analytics, Data Analytics, Task Automation, Cybersecurity, Debugging, Utilizing Unit Testing, Test Environments, and Test Cases.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2022-09-01">Sep 2022</time> –
+                    <time datetime="2023-06-01">Jun 2023</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Student Technician</strong>
+                </div>
+              </header>
+                <p>Assist with and maintain Engineering Machine Shop at Union College for Students and Faculty at Union College. Utilized and further developed skills in Engineering Methods', ' 3D Printer Operation, Power Tools Operation, Mill Operation, Lathe Operation, Principles in Engineering and Maintainance of Engineering Machinery, Verifying the Integrity of Machinery, Machine Shop Safety Methods.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2021-09-01">Sep 2021</time> –
+                    <time datetime="2022-06-01">Jun 2022</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Student Research / Technician</strong>
+                </div>
+              </header>
+                <p>Developed tools for analyzing data in Psychology Research. Utilized experience in software engineering to parse through large research datasets.\nDeveloped a remote-capable assessment tool for creativity. Utilized and further developed skills in Data Analytics, Research Methods in Psychology, Web Development, Task Automation.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2020-10-01">Oct 2020</time> –
+                    <time datetime="2021-03-01">Mar 2021</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Content and Video Producer</strong>
+                </div>
+              </header>
+                <p>Contributed to content in the research and content writing stage of the Foundations in Neurotechnology course by The BCI Guys and NeurotechX. Later contributed to the video production portion of the online course. Utilized and expanded upon skills with Adobe Premiere, Scientific Communication.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2021-03-01">Mar 2021</time> –
+                    <time datetime="2021-06-01">Jun 2021</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Student Research / Technician</strong>
+                </div>
+              </header>
+                <p>Supported laboratory staff with development of technical components of Biology Research. Utilized AMIRA software for CT Imaging of Invertebrate organisms. Utilized and further developed skills in Research and Methods in Biology Research, MicroCT Imaging, Scientific Writing and Documentation, Methods and saftey in the Wet Lab setting.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2019-09-01">Sep 2019</time> –
+                    <time datetime="2021-03-01">Mar 2021</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Student Technician</strong>
+                </div>
+              </header>
+                <p>Provided technical assistance to students and faculty at Union College through the IT Services Department.\nUtilized and further developed skills in IT Services, Technical Support and Repair, Customer Service, Communications.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2019-09-01">Sep 2019</time> –
+                    <time datetime="2020-03-01">Mar 2020</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Electronics Repair Technician</strong>
+                </div>
+              </header>
+                <p>Managed self run Electronics Repair Business. Repaired technology such as computers, phones and appliances for clients. Utilized and further developed skills in Customer Service, Windows, MacOS, Linux, Electronics Repair and troubleshooting.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2019-03-01">Mar 2019</time> –
+                    <time datetime="2019-06-01">Jun 2019</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Electronics Repair Technician</strong>
+                </div>
+              </header>
+                <p>Repaired Computers and Mobile Devices for customers until the business closed in Summer of 2019. Utilized and further developed skills in Customer Service, Windows, MacOS, Linux, Electronics Repair and troubleshooting.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2018-06-01">Jun 2018</time> –
+                    <time datetime="2018-09-01">Sep 2018</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Research Assistant Intern</strong>
+                </div>
+              </header>
+                <p>Assisted laboratory staff with equipment, procedures and data analytics regarding Brain Computer Interfaces and psychology applications of EEG. Assisted with TMS equipment and EEG applications for phosphenes stimulation and observation of Alpha activity relating to attention. Utilized and further developed skills in Research Methods in Psychology, Electrophysiological data, Transcranial Magnetic Stimulation, EEG Setup and Recording, Communication.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2017-06-01">Jun 2017</time> –
+                    <time datetime="2017-08-01">Aug 2017</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Research Assistant Intern</strong>
+                </div>
+              </header>
+                <p>Assisted Laboratory Staff with equipment and lab procedures regarding Rheumatology, Protein Synthesis, Plasmid Vector Cloning, and Research in Rheumatoid Arthritis. Utilized and further developed skills in Research Methods in Biological Sciences, Laboratory Procedures and Safety, Plasmid Vector Cloning, Wet Lab Experience.</p>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Union College</h4>
+                  <span>
+                    <time datetime="2019-09-01">Sep 2019</time> –
+                    <time datetime="2023-06-06">Jun 2023</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Neuroscience and Computer Science</strong>
+                </div>
+              </header>
+                <p>Bachelor of Science</p>
+            </article>
+        </div>
+      </section>
+      <section id="awards">
+        <h3>Awards</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Dean&#x27;s List</h4>
+                    <time datetime="2022-08-01">Aug 2022</time>
+                </div>
+                <div class="spaced-list">
+                    <div>
+                      Awarded by <strong>Union College</strong>
+                    </div>
+                </div>
+              </header>
+                <p>Received recognition for outstanding academic achievement. 2021 - 2022
+    https://union.meritpages.com/stories/Leonardo-Ferrisi-named-to-the-2021-Union-College-Dean-s-List/62244410</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Deans List</h4>
+                    <time datetime="2021-08-01">Aug 2021</time>
+                </div>
+                <div class="spaced-list">
+                    <div>
+                      Awarded by <strong>Union College</strong>
+                    </div>
+                </div>
+              </header>
+                <p>Received recognition for outstanding academic achievement. 2021 - 2022
+    https://meritpages.com/LeonardoFerrisi</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4> Nu Rho Psi National Honors Society in NeuroscienceNu Rho Psi National Honors Society in Neuroscience </h4>
+                    <time datetime="2022-05-01">May 2022</time>
+                </div>
+                <div class="spaced-list">
+                    <div>
+                      Awarded by <strong>Union College</strong>
+                    </div>
+                </div>
+              </header>
+                <p>Membership into Nu Rho Psi is offered to students in Neuroscience who have achieved exceptional results in academic excellence both cumulatively and in Neuroscience.</p>
+    <p>Nu Rho Psi is the only nationally-recognized honor society in the area of brain research. The study of the brain is one of the noblest of academic pursuits because a deep and true understanding of the principles by which the brain works contributes directly to the quality of our lives and the well-being of future generations.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Summer Research Fellow </h4>
+                    <time datetime="2021-03-01">Mar 2021</time>
+                </div>
+                <div class="spaced-list">
+                    <div>
+                      Awarded by <strong>Union College Undergraduate Research</strong>
+                    </div>
+                </div>
+              </header>
+                <p>Received fellowship for research in Neurofeedback at Union College with Dr. Timothy George.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4> National Hispanic Recognition AwardNational Hispanic Recognition Award </h4>
+                    <time datetime="2019-03-01">Mar 2019</time>
+                </div>
+                <div class="spaced-list">
+                    <div>
+                      Awarded by <strong>College Board</strong>
+                    </div>
+                </div>
+              </header>
+                <p>Recognized for outstanding academic achievement as a member of the Hispanic community</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>US Presidential Scholars Nominee </h4>
+                    <time datetime="2018-12-01">Dec 2018</time>
+                </div>
+                <div class="spaced-list">
+                    <div>
+                      Awarded by <strong>United States Department of Education</strong>
+                    </div>
+                </div>
+              </header>
+                <p>Was nominated among 20 other students in my state by a NY assembly member as a candidate for the student representative for NY for the US Presidential Scholars Program.</p>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Software</h4>
+                <ul class="tag-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>R</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h4>English</h4>
+              Mastery
+            </div>
+            <div>
+                <h4>Italian</h4>
+              Proficient
+            </div>
+            <div>
+                <h4>Spanish</h4>
+              Proficient
+            </div>
+        </div>
+      </section>
+  </body>
+</html>
