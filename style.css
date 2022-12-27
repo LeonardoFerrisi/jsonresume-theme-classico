@@ -1,18 +1,94 @@
 body {
 	background: #fff;
-	font: 15px Arial; /* , Helvetica, sans-serif; */
+	font: 12px Arial; /* , Helvetica, sans-serif; */
 	line-height: 1.4;
-	margin: 50px 0;
-	margin-bottom: 100px;
+	/* margin: 50px 0; */
+	margin-top: 10px 10px;
+	margin: 10px 10px;
+	padding: 10px;
+	margin-bottom: 10px;
 }
+
 em {
-	color: #fff;
+	/* color: #999; */
+	color: #999;
 }
 p {
 	line-height: 1.4;
 }
 ul {
 	margin-bottom: 0;
+}
+
+#container {
+	display: grid;
+	grid-gap: 2px;
+	grid-template-columns: 400px [four-hundred] 400px [four-hundred];
+	grid-template-rows: [head-row] 20px [content-row] 20px [content-row] 20px [footer-row] 0px;
+}
+
+#container.headeritem {
+	grid-column: four-hundred 1 / four-hundred 2;
+	grid-row: head-row / content-row 1;
+}
+
+#container.site {
+	grid-column: four-hundred 2 / four-hundred 3;
+	grid-row: head-row / content-row 1;
+}
+
+#container.label {
+	grid-column: four-hundred 1 / four-hundred 2;
+	grid-row: content-row 1 / content-row 2;
+}
+
+#container.email {
+	grid-column: four-hundred 2 / four-hundred 3;
+	grid-row: content-row 1 / content-row 2;
+}
+
+#container.locationitem {
+	grid-column: four-hundred 2 / four-hundred 3;
+	grid-row   : content-row 2 / footer-row;
+}
+
+#header-line {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	line-height: 0.5;
+	margin: 5px 5;
+	display: inline;
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	line-height: 1.0;
+	margin: 10px 0;
+	display: inline;
+}
+h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	line-height: 1.0;
+	margin: 10px 0;
+}
+
+/* #label {
+	display: inline-block;
+} */
+
+hr.dashed {
+	border-top: 1px dashed;
+	border-bottom: none;
+}
+hr.dotted {
+	border-top: 1px dotted;
+	border-bottom: none;
+	margin: 20px 0;
 }
 section {
 	margin-bottom: 2em;
@@ -26,7 +102,8 @@ blockquote {
 }
 #resume {
 	margin: 0 auto;
-	max-width: 480px;
+	max-width: 800px;
+	max-height: 1054;
 	padding: 0 20px;
 }
 #basics {
@@ -34,23 +111,36 @@ blockquote {
 }
 #basics h3 {
 	margin-top: 1.5em;
-	/* margin-top: 0; */
 }
 #basics .contact strong,
+
+#location h3 {
+	display: inline-block;
+}
+
 #location strong {
-	clear: both;
+	/* clear: left; */
 	float: left;
-	/* line-height: 1.3; */
-	line-height: 0;
+	line-height: 1.3;
 	width: 120px;
 }
+
+/* #profiles h3 {
+	display: block;
+} */
+
 #profiles,
 #skills {
 	overflow: hidden;
 }
-#profiles .item,
+/* #profiles .item {
+	float: left;
+	display: inline;
+} */
+
 #skills .item {
 	float: left;
+	display: inline;
 	width: 50%;
 }
 

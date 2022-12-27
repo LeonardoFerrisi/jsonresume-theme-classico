@@ -1,68 +1,52 @@
 {{#resume.basics}}
-	<h1>{{name}}</h1>
-	<h2>{{label}}</h2>
-	<section id="basics">
-		<div class="contact">
-		{{#if website}}
-		<div class="website">
-			<strong>Website</strong>
-			{{website}}
+
+	<section id="container" style="margin: 0px 0">
+		<div class="headeritem">
+			<h2 style="text-align:left; float: left;">{{name}}</h2>
 		</div>
-		{{/if}}
-		{{#if email}}
+		<div class="site">
+			<p style="text-alight:right; float: right; margin: 0 5px;">{{#if website}}<a href="{{website}}">{{website}}</a>{{/if}}</p>
+		</div>
+		<div class="label">
+			<h4 style="text-align:left; float: left;"><i>{{label}}</i></h4>
+		</div>
 		<div class="email">
-			<strong>Email</strong>
-			{{email}}
+			<p style="text-alight:right; float: right; margin: 0 5px;">{{#if email}}{{email}}{{/if}}{{#if phone}} - {{phone}}  {{/if}}</p>
 		</div>
-		{{/if}}
-		{{#if phone}}
+		<div class="locationitem">
+			<p style="text-alight:left;">{{#location}}{{#if address}}{{address}},{{/if}} {{#if postalCode}}{{postalCode}}-{{/if}}{{#if city}}{{city}}{{/if}},{{#if region}} {{region}}{{/if}}{{#if countryCode}} - {{countryCode}}{{/if}}{{/location}}</p>
+		</div>
 		<div class="phone">
-			<strong>Phone</strong>
-			{{phone}}
+			<p style="text-alight:right; float: right;"></p>
 		</div>
-		{{/if}}
-		</div>
-		{{#if summary}}
-		<div class="summary">
+	</section>
+
+	{{#if summary}}
+		<div class="summary" style="margin: 0px 0;">
 			<p>{{summary}}</p>
 		</div>
-		{{/if}}
-		{{#location}}
-		<h3>Location</h3>
-		<section id="location">
-			{{#if address}}
-			<div class="address">
-				<strong>Address</strong>
-				{{address}}
-			</div>
-			{{/if}}
-			{{#if postalCode}}
-			<div class="postalCode">
-				<strong>Postal code</strong>
-				{{postalCode}}
-			</div>
-			{{/if}}
-			{{#if city}}
-			<div class="city">
-				<strong>City</strong>
-				{{city}}
-			</div>
-			{{/if}}
-			{{#if countryCode}}
-			<div class="countryCode">
-				<strong>Country code</strong>
-				{{countryCode}}
-			</div>
-			{{/if}}
-			{{#if region}}
-			<div class="region">
-				<strong>Region</strong>
-				{{region}}
-			</div>
-			{{/if}}
-		</section>
-		{{/location}}
-		{{#if profiles.length}}
+	{{/if}}
+
+	<hr class="dotted">
+
+	{{!-- {{#if profiles.length}}
+		<div class="links">			
+			{{#each profiles}}
+				{{#if url}}
+					<div style="display: inline;">
+						<p style="list-style: none; display: inline; margin: 20px 0; overflow: hidden;", class="item"><a href="{{url}}">{{url}}</a></p>
+					</div>
+				{{/if}}
+			{{/each}}
+		</div>
+	{{/if}} --}}
+
+	<section id="basics">
+		<div class="contact">
+		</div>
+		
+
+		{{!-- {{#if profiles.length}}
 		<h3>Profiles</h3>
 		<section id="profiles">
 			{{#each profiles}}
@@ -85,6 +69,6 @@
 			</div>
 			{{/each}}
 		</section>
-		{{/if}}
+		{{/if}} --}}
 	</section>
 {{/resume.basics}}
